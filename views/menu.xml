@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <menuitem id="main_miro_daniel" name="Miro Daniel"/>
+        <menuitem id="clubes_menu" name="Clubes" parent="main_miro_daniel" action="clubes_list_action"/>
+        <menuitem id="xogadores_menu" name="Xogadores" parent="main_miro_daniel" action="xogadores_list_action"/>
+        <menuitem id="partidas_menu" name="Partidas" parent="main_miro_daniel" action="partidas_list_action"/>
+    </data>
+</odoo>

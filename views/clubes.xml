@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="clubes_list_action">
+            <field name="name">Clubes de Xadrez</field>
+            <field name="res_model">miro_daniel.clubes</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Tes que crear o primeiro rexistro</p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="clubes_form_view">
+            <field name="name">clubes.form</field>
+            <field name="model">miro_daniel.clubes</field>
+            <field name="arch" type="xml">
+                <form string="Rexistro Club">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="telefono"/>
+                                <field name="nif"/>
+                                <field name="cod_rexistro"/>
+                                <field name="local"/>
+                                <field name="localidade"/>
+                                <field name="id_pais" invisible="1"/>
+                                <field name="provincia"/>
+                                <field name="cod_postal"/>
+                                <field name="pais"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="clubes_tree_view">
+            <field name="name">clubes.tree</field>
+            <field name="model">miro_daniel.clubes</field>
+            <field name="arch" type="xml">
+                <tree string="clubes Tree" editable="top">
+                    <field name="name"/>
+                    <field name="telefono"/>
+                    <field name="nif"/>
+                    <field name="cod_rexistro"/>
+                    <field name="local"/>
+                    <field name="localidade"/>
+                    <field name="id_pais" invisible="1"/>
+                    <field name="provincia"/>
+                    <field name="cod_postal"/>
+                    <field name="pais"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="clubes_search_view">
+            <field name="name">clubes.search</field>
+            <field name="model">miro_daniel.clubes</field>
+            <field name="arch" type="xml">
+                <search>
+
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

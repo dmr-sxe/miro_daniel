@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+miro_daniel_clubes,miro_daniel.clubes,model_miro_daniel_clubes,base.group_user,1,1,1,1
+miro_daniel_xogadores,miro_daniel.xogadores,model_miro_daniel_xogadores,base.group_user,1,1,1,1
+miro_daniel_partidas,miro_daniel.partidas,model_miro_daniel_partidas,base.group_user,1,1,1,1
